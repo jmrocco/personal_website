@@ -41,24 +41,31 @@ const work_experience = [
         title: "Software Engineering Intern",
         company: "ConsenSys",
         date: "January 2019 to April 2019",
-        skills: "--insert skills learned here--",
-        description: "--insert description here--"
+        skills: "Fullstack Web APIs",
+        description: "Designed a media conversion API to be used with the Kauri Blockchain platform. " +
+                     "Wrote extensive technical documentation for the beginner Blockchain user as well as " +
+                     "optimized smart contract code base usuage by 90%."
+                     
     },
     {
         key: 2,
         title: "Electrical Engineer",
         Company: "Avidbots",
         date: "January 2020 to April 2020",
-        skills: "--insert skills learned here--",
-        description: "--insert description here--"
+        skills: "Electrical Q&A & Firmware Development",
+        description: "I was apart of many different tasks such as micro-soldering PCB boards, " +
+                     "creating electrical drawings and wiring harnesses, troubleshooting robots, " +
+                     "and assisting in firmware development."
     },
     {
         key: 3,
         title: "WEEF TA",
         company: "University of Waterloo: Faculty of Engineering",
         date: "September 2020 to December 2020",
-        skills: "--insert skills learned here--",
-        description: "--insert description here--"
+        skills: "Python scripting and UNIX administration",
+        description: "As an electrical and computer engineering teaching assistant, I helped " +
+                     "run the first year introduction to programming class in an online environment. " +
+                    "Responsibilites also included designing, testing and implementing changes to a production codebase."
     }
 ]
 
