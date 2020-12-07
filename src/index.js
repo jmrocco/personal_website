@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import { Aboutme } from './about.js';
+import { Contactinfo } from './contact.js';
+import { Experience } from './experience.js';
+import { Projects } from './projects.js';
+import { Navigationbar } from './navbar.js';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+class Home extends Component
+{
+  render(){
+    return(
+      <div classname = "homepage">
+        <h1>This is the home page.</h1>
+        <Navigationbar />
+        <Contactinfo />
+        <Aboutme />
+        <Experience />
+        <Projects />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<Home />,document.getElementById('root'));
+
