@@ -16,7 +16,7 @@ class Home extends Component
 {
   render(){
     return(
-      <div classname = "home_page">
+      <div id = "home_page">
         <Navigationbar />
           <Container>
             <Row>
