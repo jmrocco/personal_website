@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import { FaBehance , FaGithub, FaLinkedin} from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
 import './index.css';
@@ -16,8 +17,16 @@ class ContactInfo extends Component
                     <Row>
                         <Col>
                             <h1>Contact</h1>
-                            <p>--Something about contacting me--</p>
-                            <ContactIcons />
+                            <p>If you would like to get in contact with me please don't hesistate.</p>
+                            <p id='quote'>"Feedback is the breakfast of champions" - Ken Blanchard</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Button>Contact Me</Button>
+                        </Col>
+                        <Col>
+                            <Button>Resume</Button>
                         </Col>
                     </Row>
                 </Container>
