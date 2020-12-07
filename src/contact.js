@@ -11,7 +11,7 @@ class ContactInfo extends Component
 {
     render(){
         return(
-            <div classname = 'contact_info'>
+            <div id = 'contact_info'>
                 <Container>
                     <Row>
                         <Col>

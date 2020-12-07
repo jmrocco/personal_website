@@ -9,7 +9,7 @@ class Projects extends Component
 {
     render(){
         return(
-            <div classname = "projects">
+            <div id = "projects">
                 <Container>
                     <h1>Projects</h1>
                     <Row>
