@@ -5,7 +5,7 @@ class Experience extends Component
 {
     render(){
         return(
-            <h1>This is my experience</h1>
+            <h1>This is my experience section</h1>
         );
     }
 }
