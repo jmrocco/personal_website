@@ -17,12 +17,12 @@ class Experience extends Component
     render(){
         return(
             <div>
-                <Container id = 'experiences'>
+                <Container id = 'experiences'fluid >
                     <h1 id = 'title'>Experience</h1>
                     <Row>
                     {work_experience.map(experience =>{
                         return (
-                                <Col>
+                                <Col lg>
                                     <Card id= 'experience_card'>
                                         <Card.Body>
                                             <Card.Img variant="top" src={experience.image} alt= {experience.alt}/>

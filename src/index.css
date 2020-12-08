@@ -10,25 +10,28 @@ body {
     background-color: rgb(175, 236, 206);
   }
 
+/*------Titles for every section-----*/
+
 #title {
  color: rgb(255, 255, 255);
 }
+/* --------------------------------- */
 
+/*--------Experience Section--------*/
 #experience_card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.37);
     transition: 0.3s;
+    margin: 0.5rem;
 }
 
 #experience_card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.37);
+
 }
 
 #experiences {
     background-color: rgb(157, 122, 238);
-    padding-left : 2%;
-    padding-right : 2%;
-    padding-top: 1%;
-    padding-bottom: 2%;
+    padding : 3rem;
 }
 
 #readButton {
@@ -53,3 +56,73 @@ body {
 #readButton:focus {
     outline:0;
 }
+
+/* --------------------------------- */
+
+
+/*---------Contact Section----------*/
+#contact-icon {
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  fill: black;
+}
+#contact-icon:hover {
+    fill:white;
+  }
+
+/* --------------------------------- */
+
+  .typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.07em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 82% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+/*---------Contact Section----------*/
+#projects{
+  background-color: rgb(157, 122, 238);
+  padding : 3rem;
+}
+
+#project_card {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#project_card_info{
+  padding: 5%;
+  margin: 6%;
+}
+
+/* #project_card_image {
+  margin-top: 8%;
+  margin-left: 5%;
+  margin-bottom: 8%;
+  margin-right: 5%;
+  padding:1%;
+}
+
+#image{
+  padding: 0.1%;
+  margin-top:30%;
+  margin-bottom:30%;
+} */
