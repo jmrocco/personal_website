@@ -16,8 +16,8 @@ class Experience extends Component
 
     render(){
         return(
-            <div>
-                <Container id = 'experiences'fluid >
+            <div id="experience_div">
+                <Container id = 'experiences'>
                     <h1 id = 'title'>Experience</h1>
                     <Row>
                     {work_experience.map(experience =>{
@@ -26,9 +26,9 @@ class Experience extends Component
                                     <Card id= 'experience_card'>
                                         <Card.Body>
                                             <Card.Img variant="top" src={experience.image} alt= {experience.alt}/>
-                                            <Card.Title>{experience.title}</Card.Title>
+                                            <Card.Title id="card_title">{experience.title}</Card.Title>
                                             <Card.Text>
-                                                <Container>
+                                                <Container id="card_stats">
                                                     <Row>
                                                         {experience.company}
                                                     </Row>
@@ -42,7 +42,7 @@ class Experience extends Component
                                                     Read more
                                                 </Accordion.Toggle>
                                                 <Accordion.Collapse eventKey = "0">
-                                                    <Card.Text>
+                                                    <Card.Text id="card_info">
                                                         {experience.skills}<br/><br/>
                                                         {experience.description}
                                                     </Card.Text>
@@ -69,7 +69,7 @@ const work_experience = [
         show: "false",
         company: "ConsenSys",
         date: "January 2019 to April 2019",
-        skills: "Fullstack Web APIs",
+        skills: "Skills: Fullstack Web APIs",
         description: "Designed a media conversion API to be used with the Kauri Blockchain platform. " +
                      "Wrote extensive technical documentation for the beginner Blockchain user as well as " +
                      "optimized smart contract code base usuage by 90%."
@@ -83,7 +83,7 @@ const work_experience = [
         show: "false",
         company: "Avidbots",
         date: "January 2020 to April 2020",
-        skills: "Electrical Q&A & Firmware Development",
+        skills: "Skills: Electrical Q&A & Firmware Development",
         description: "I was apart of many different tasks such as micro-soldering PCB boards, " +
                      "creating electrical drawings and wiring harnesses, troubleshooting robots, " +
                      "and assisting in firmware development."
@@ -96,7 +96,7 @@ const work_experience = [
         show: "false",
         company: "University of Waterloo",
         date: "September 2020 to December 2020",
-        skills: "Python scripting and UNIX administration",
+        skills: "Skills: Python scripting & UNIX administration",
         description: "As an electrical and computer engineering teaching assistant, I helped " +
                      "run the first year introduction to programming class in an online environment. " +
                     "Responsibilites also included designing, testing and implementing changes to a production codebase."

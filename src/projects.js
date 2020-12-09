@@ -12,29 +12,27 @@ class Projects extends Component
 {
     render(){
         return(
-            <div>
-                <Container id='projects' fluid>
+            <div id="project_div">
+                <Container id='projects'>
                     <h1 id = 'title'>Projects</h1>
                     <Row>
                         {projects.map(project => {
                             return (
+                                <Col>
                                     <Card id='project_card'>
                                         <Card.Body>
                                             <Container fluid>
-                                                <Row>
-                                                    <Col lg id='project_card_image'>
+                                                <Row lg>
                                                         <Card.Img id="image" src={project.image} alt= {project.alt}/>
-                                                    </Col>
-                                                    <Col id='project_card_info' lg>
                                                         <Card.Title>{project.title}</Card.Title>
                                                         <Card.Text>{project.skills}</Card.Text>
                                                         <Card.Text>{project.description}</Card.Text>
                                                         <Card.Text>{project.why}</Card.Text>
-                                                    </Col>
                                                 </Row>
                                             </Container>
                                         </Card.Body>
                                     </Card>
+                                </Col>
                             );
                         })}
                     </Row>

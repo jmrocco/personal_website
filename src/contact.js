@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { FaBehance , FaGithub, FaLinkedin} from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
+import   resume  from './images/juliette_rocco_resume.pdf';
 import './index.css';
 
 // To do: add a contact forum
@@ -12,23 +13,28 @@ class ContactInfo extends Component
 {
     render(){
         return(
-            <div id = 'contact_info'>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h1>Contact</h1>
-                            <p>If you would like to get in contact with me please don't hesistate.</p>
-                            <p id='quote'>"Feedback is the breakfast of champions" - Ken Blanchard</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Button>Contact Me</Button>
-                        </Col>
-                        <Col>
-                            <Button>Resume</Button>
-                        </Col>
-                    </Row>
+            <div id= "contact_div">
+                <Container id="contact_info">
+                    <h1 id = 'title'>Contact</h1>
+                    <div id="contact_items">
+                        <Row className="justify-content-md-center">
+                            <Col id="contact_text" xs lg="auto">
+                                <p>If you would like to get in contact with me please don't hesistate.</p>
+                                <i>"Feedback is the breakfast of champions" - Ken Blanchard</i>
+                            </Col>
+                        </Row>
+                        <Row id="contact_buttons" className="justify-content-md-center">
+                            <Col xs lg="auto">
+                                <Button id="button">Contact Me</Button>
+                            </Col>
+                            <Col xs lg="auto">
+                                <Button id="button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-md-center" id ="watermark" xs>
+                            <p>Made with&nbsp;<span class="heart">❤️</span>&nbsp;Juliette Rocco 2020</p>
+                        </Row>
+                    </div>
                 </Container>
             </div>
         );
@@ -36,26 +42,26 @@ class ContactInfo extends Component
 }
 const ContactIcons = () => {
     return (
-        <Container>
-            <Row>
-                <Col>
+        <Container id="contact_icons">
+            <Row lg className="justify-content-md-center" >
+                <Col xs lg="auto">
                     <a href= "https://jrocco.myportfolio.com/" target = "_blank" rel="noopener noreferrer">
-                        <FaBehance classname = "contact-icon" />
+                        <FaBehance id = "contact-icon" />
                     </a>
                 </Col>
-                <Col>
+                <Col xs lg="auto">
                     <a href= "https://www.linkedin.com/in/julietterocco" target = "_blank" rel="noopener noreferrer">
-                        <FaLinkedin classname = "contact-icon" />
+                        <FaLinkedin id = "contact-icon" />
                     </a>
                 </Col>
-                <Col>
+                <Col xs lg="auto">
                     <a href= "https://github.com/jmrocco" target = "_blank" rel="noopener noreferrer">
-                        <FaGithub classname = "contact-icon" />
+                        <FaGithub id = "contact-icon" />
                     </a>
                 </Col>
-                <Col>
+                <Col xs lg="auto">
                     <a href= "mailto:jmrocco@edu.uwaterloo.ca" target = "_blank" rel="noopener noreferrer">
-                        <IoIosMail classname = "contact-icon" />
+                        <IoIosMail id = "contact-icon" />
                     </a>
                 </Col>
             </Row>
