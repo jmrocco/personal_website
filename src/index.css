@@ -12,10 +12,6 @@ body {
     background-color: #10E7DC;
   }
 
-html{
-  scroll-behavior: smooth;
-}
-
 /*------Titles for every section-----*/
 
 #title {
@@ -28,7 +24,10 @@ html{
 /*--------Experience Section--------*/
 #experiences {
   /* background-color: #6CDAEE; */
-  padding : 1.5rem;
+  padding-right : 1.5rem;
+  padding-left : 1.5rem;
+  padding-bottom : 3rem;
+  padding-top : 3rem;
 }
 #experience_card {
     box-shadow: 0 4px 8px 0 #0074E1;
@@ -109,12 +108,15 @@ html{
 
 
 #projects{
-  padding : 1.5rem;
+  padding-right : 1.5rem;
+  padding-left : 1.5rem;
+  padding-bottom : 3rem;
+  padding-top : 3rem;
 }
+
 
 #project_div{
   background-color:#F79E02;
-  
 }
 
 #experience_div{
@@ -131,12 +133,34 @@ html{
 
 #contact_info{
   font-family: 'Inconsolata', monospace;
+  padding-top : 3rem;
 }
 
 #nav_bar{
-  background: rgb(192, 196, 255);
+  background-color: rgb(141, 147, 238);
+}
+
+#nav_brand{
+  cursor: pointer;
   font-family: 'Inconsolata', monospace;
+  color: white;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
   font-weight: 900;
+  font-size: 1.2rem;
+}
+#nav_item{
+  margin-right: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+#nav_item:hover, #nav_brand:hover{
+  color: rgb(162, 247, 247);
 }
 
 
