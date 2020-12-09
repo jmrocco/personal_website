@@ -3,26 +3,51 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import avidbots from './images/avidbots.png';
+import weef_ta from './images/weef_ta.png';
+import consensys from './images/consensys.png';
+
 import './index.css';
+import { Accordion } from 'react-bootstrap';
 
 class Experience extends Component
 {
+
     render(){
         return(
-            <div id = 'experiences'>
-                <Container>
-                    <h1>Experience</h1>
+            <div id="experience_div">
+                <Container id = 'experiences'>
+                    <h1 id = 'title'>Experience</h1>
                     <Row>
                     {work_experience.map(experience =>{
                         return (
-                                <Col>
-                                    <Card>
+                                <Col lg>
+                                    <Card id= 'experience_card'>
                                         <Card.Body>
-                                            <Card.Title>{experience.title}</Card.Title>
-                                            <Card.Text>{experience.company}<br/><br/>
-                                            {experience.date}<br/><br/>
-                                            {experience.skills}<br/><br/>
-                                            {experience.description}</Card.Text>
+                                            <Card.Img variant="top" src={experience.image} alt= {experience.alt}/>
+                                            <Card.Title id="card_title">{experience.title}</Card.Title>
+                                            <Card.Text>
+                                                <Container id="card_stats">
+                                                    <Row>
+                                                        {experience.company}
+                                                    </Row>
+                                                    <Row>
+                                                        {experience.date}
+                                                    </Row>
+                                                </Container>
+                                            </Card.Text>
+                                            <Accordion>
+                                                <Accordion.Toggle as={Button} variant="button" eventKey = "0" id='readButton'>
+                                                    Read more
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey = "0">
+                                                    <Card.Text id="card_info">
+                                                        {experience.skills}<br/><br/>
+                                                        {experience.description}
+                                                    </Card.Text>
+                                                </Accordion.Collapse>
+                                            </Accordion>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -39,9 +64,12 @@ const work_experience = [
     {
         key: 1,
         title: "Software Engineering Intern",
+        image: consensys,
+        alt: "Consensys logo",
+        show: "false",
         company: "ConsenSys",
         date: "January 2019 to April 2019",
-        skills: "Fullstack Web APIs",
+        skills: "Skills: Fullstack Web APIs",
         description: "Designed a media conversion API to be used with the Kauri Blockchain platform. " +
                      "Wrote extensive technical documentation for the beginner Blockchain user as well as " +
                      "optimized smart contract code base usuage by 90%."
@@ -50,9 +78,12 @@ const work_experience = [
     {
         key: 2,
         title: "Electrical Engineer",
-        Company: "Avidbots",
+        image: avidbots,
+        alt: "Avidbots logo",
+        show: "false",
+        company: "Avidbots",
         date: "January 2020 to April 2020",
-        skills: "Electrical Q&A & Firmware Development",
+        skills: "Skills: Electrical Q&A & Firmware Development",
         description: "I was apart of many different tasks such as micro-soldering PCB boards, " +
                      "creating electrical drawings and wiring harnesses, troubleshooting robots, " +
                      "and assisting in firmware development."
@@ -60,9 +91,12 @@ const work_experience = [
     {
         key: 3,
         title: "WEEF TA",
-        company: "University of Waterloo: Faculty of Engineering",
+        image: weef_ta,
+        alt: "WEEF TA logo",
+        show: "false",
+        company: "University of Waterloo",
         date: "September 2020 to December 2020",
-        skills: "Python scripting and UNIX administration",
+        skills: "Skills: Python scripting & UNIX administration",
         description: "As an electrical and computer engineering teaching assistant, I helped " +
                      "run the first year introduction to programming class in an online environment. " +
                     "Responsibilites also included designing, testing and implementing changes to a production codebase."
