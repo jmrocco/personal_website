@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import ReactDOM from 'react-dom';
 import './index.css';
 
@@ -12,7 +11,7 @@ import { Experience } from './experience.js';
 import { Projects } from './projects.js';
 import { Navigationbar } from './navbar.js';
 
-import image1 from './images/image2.jpg';
+import image1 from './images/image2.png';
 
 
 
@@ -24,10 +23,10 @@ class Home extends Component
         <Navigationbar />
           <Container id='home'>
             <Row>
-              <Col xs={11} md={4}>
-                  <img id="main_image" src={image1} alt="hunstville"/>
+              <Col lg>
+                  <img id="main_image" src={image1} alt="hunstville" class="img-fluid" />
               </Col>
-              <Col xs={12} md={8}>
+              <Col lg>
                 <Container id="home_about">
                 <Row>
                   <h1 id="typewriter">Hi! I'm Juliette Rocco<span role="img" aria-label="mermaid">🧜‍♀️</span>

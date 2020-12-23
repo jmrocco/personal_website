@@ -19,11 +19,11 @@ class Projects extends Component
                     <h1 id = 'title'>Projects</h1>
                         {projects.map(project => {
                             return (
-                                <Row>
+                                <Row className="justify-content-md-center">
                                     <Card id='project_card'>
                                         <Card.Body>
                                             <Container id = "project_content">
-                                                <Row>
+                                                <Row className="justify-content-md-center">
                                                     <Col class="center-block">
                                                         <Card.Title id="project_title">{project.title}
                                                         <span role="img" aria-label ={project.emoji_label}>
@@ -35,7 +35,7 @@ class Projects extends Component
                                                     </Col> 
                                                     <Col id="right_block_project" xs={11} md={5}>
                                                         <Card.Img id="project_image" src={project.image} alt= {project.alt}/>
-                                                        <Button id="button">Github</Button>
+                                                        <Button id="button" href={project.link} target="_blank" >Github</Button>
                                                     </Col> 
                                                 </Row>          
                                             </Container>
@@ -62,7 +62,8 @@ const projects = [
         image: im_feeling,
         alt: "placeholder",
         emoji_label: "performing arts",
-        emoji: '🎭'
+        emoji: '🎭',
+        link: "https://github.com/jmrocco/im_feeling"
     },
     {
         key: 2,
@@ -76,7 +77,8 @@ const projects = [
         image : smart_mirror,
         alt: "placeholder",
         emoji_label: "selfie",
-        emoji: '🤳'
+        emoji: '🤳',
+        link: "https://github.com/jmrocco/smart-mirror"
     },
     {
         key: 3,
@@ -90,7 +92,8 @@ const projects = [
         image: website,
         alt: "placeholder",
         emoji_label: "laptop",
-        emoji: '💻'
+        emoji: '💻',
+        link: "https://github.com/jmrocco/my-website"
     }
 ]
 
