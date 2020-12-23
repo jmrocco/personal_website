@@ -24,8 +24,8 @@ class Home extends Component
         <Navigationbar />
           <Container id='home'>
             <Row>
-              <Col xs={6} md={4}>
-                <img id="main_image" src={image1} alt="hunstville"/>
+              <Col xs={11} md={4}>
+                  <img id="main_image" src={image1} alt="hunstville"/>
               </Col>
               <Col xs={12} md={8}>
                 <Container id="home_about">
