@@ -25,7 +25,7 @@ class ContactInfo extends Component
                         </Row>
                         <Row id="contact_buttons" className="justify-content-md-center">
                             <Col xs lg="auto">
-                                <Button id="project_contact_button">Contact Me</Button>
+                                <Button id="project_contact_button" href= "mailto:jmrocco@uwaterloo.ca" target = "_blank">Contact Me</Button>
                             </Col>
                             <Col xs lg="auto">
                                 <Button id="project_contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
@@ -60,7 +60,7 @@ const ContactIcons = () => {
                     </a>
                 </Col>
                 <Col xs lg="auto">
-                    <a href= "mailto:jmrocco@edu.uwaterloo.ca" target = "_blank" rel="noopener noreferrer">
+                    <a href= "mailto:jmrocco@uwaterloo.ca" target = "_blank" rel="noopener noreferrer">
                         <IoIosMail id = "contact-icon" />
                     </a>
                 </Col>
