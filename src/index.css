@@ -100,8 +100,8 @@ body {
   padding: 2rem;
 }
 
-.center-block_project{
-  margin-top: 10rem;
+#center-block_project{
+  margin: auto;
 }
 
 #project_title{

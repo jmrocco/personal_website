@@ -24,7 +24,7 @@ class Projects extends Component
                                         <Card.Body>
                                             <Container id = "project_content">
                                                 <Row className="justify-content-md-center">
-                                                    <Col class="center-block_project">
+                                                    <Col id="center-block_project">
                                                         <Card.Title id="project_title">{project.title}
                                                         <span role="img" aria-label ={project.emoji_label}>
                                                         {project.emoji}‍
