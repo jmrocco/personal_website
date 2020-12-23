@@ -69,7 +69,7 @@ const work_experience = [
         show: "false",
         company: "ConsenSys",
         date: "January 2019 to April 2019",
-        skills: "Skills: Fullstack Web APIs",
+        skills: "Skills: APIs & Fullstack Development",
         description: "Designed a media conversion API to be used with the Kauri Blockchain platform. " +
                      "Wrote extensive technical documentation for the beginner Blockchain user as well as " +
                      "optimized smart contract code base usuage by 90%."
@@ -96,7 +96,7 @@ const work_experience = [
         show: "false",
         company: "University of Waterloo",
         date: "September 2020 to December 2020",
-        skills: "Skills: Python scripting & UNIX administration",
+        skills: "Skills: Python Scripting & UNIX Administration",
         description: "As an electrical and computer engineering teaching assistant, I helped " +
                      "run the first year introduction to programming class in an online environment. " +
                     "Responsibilites also included designing, testing and implementing changes to a production codebase."

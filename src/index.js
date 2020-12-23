@@ -44,7 +44,7 @@ class Home extends Component
                       artwork, and literature of all kinds.  <br/><br/>
                       I created this website as a way to promote some of the projects and experiences
                       that I've been fortunate enough to be apart of. I am actively looking for new 
-                      opportunities and contacts, please contact me!     
+                      opportunities and acquaintances, please contact me!     
                     </p>
                   </Row>
                   </Container>

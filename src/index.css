@@ -136,6 +136,11 @@ body {
   padding-top : 3rem;
 }
 
+#watermark{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 #nav_bar{
   background-color: rgb(141, 147, 238);
 }
@@ -219,4 +224,19 @@ body {
   width: 100%;
   height:100%;
   margin: 1rem;
+}
+
+#project_card{
+  margin: 0.5rem;
+  font-family: 'Inconsolata', monospace;
+  padding: 2rem;
+}
+
+#project_image{
+  height: 80%;
+  width: 80%;
+}
+
+#project_title{
+  font-weight: 900;
 }
