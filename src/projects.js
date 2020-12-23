@@ -12,18 +12,6 @@ import './index.css';
 class Projects extends Component
 {
   
-    flip = (e) => {
-        let element = e.currentTarget;
-        
-        if(element.style.transform === "rotateY(180deg)") {
-            element.style.transform = "rotateY(0deg)";
-        }
-        else {
-            element.style.transform = "rotateY(180deg)";
-        }
-    }
-    
-
     render(){
         return(
             <div id="project_div">
@@ -45,8 +33,8 @@ class Projects extends Component
                                                         <Card.Text>{project.skills}</Card.Text>
                                                         <Card.Text>{project.why}</Card.Text>
                                                     </Col> 
-                                                    <Col>
-                                                        <Card.Img id="image" src={project.image} alt= {project.alt}/>
+                                                    <Col id="right_block_project" xs={11} md={5}>
+                                                        <Card.Img id="project_image" src={project.image} alt= {project.alt}/>
                                                         <Button id="button">Github</Button>
                                                     </Col> 
                                                 </Row>          

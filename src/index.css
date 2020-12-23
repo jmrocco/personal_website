@@ -204,6 +204,7 @@ body {
   transition-timing-function: ease-in-out;
   transition: 0.5s;
   border: 0;
+  margin: 0.5rem;
 }
 
 #button:hover {
@@ -233,10 +234,18 @@ body {
 }
 
 #project_image{
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
 }
 
 #project_title{
   font-weight: 900;
+}
+
+#right_block_project{
+  margin: 1rem;
+}
+
+.center-block{
+  margin-top: 10rem;
 }
