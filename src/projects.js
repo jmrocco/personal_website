@@ -35,7 +35,7 @@ class Projects extends Component
                                                     </Col> 
                                                     <Col id="right_block_project" xs={11} md={5}>
                                                         <Card.Img id="project_image" src={project.image} alt= {project.alt}/>
-                                                        <Button id="project_contact_button" href={project.link} target="_blank" >Github</Button>
+                                                        <Button id="project_button" href={project.link} target="_blank" >Github</Button>
                                                     </Col> 
                                                 </Row>          
                                             </Container>

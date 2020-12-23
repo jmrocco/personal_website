@@ -23,8 +23,8 @@ class ContactInfo extends Component
                             </Col>
                         </Row>
                         <Row className="justify-content-md-center">
-                            <p id="contact_element"><FaLinkedin id= "contact-icon" />julietterocco</p>
-                            <p id="contact_element"><IoIosMail id="contact-icon" />jmrocco@uwaterloo.ca</p>
+                            <p id="contact_element"><FaLinkedin id= "contact_bottom" />julietterocco</p>
+                            <p id="contact_element"><IoIosMail id="contact_bottom" />jmrocco@uwaterloo.ca</p>
                         </Row>
                         <Row id="contact_buttons" className="justify-content-md-center">
                                 <Button id="contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
