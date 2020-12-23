@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 import ReactDOM from 'react-dom';
 import './index.css';
 
@@ -12,7 +11,7 @@ import { Experience } from './experience.js';
 import { Projects } from './projects.js';
 import { Navigationbar } from './navbar.js';
 
-import image1 from './images/image2.jpg';
+import image1 from './images/image2.png';
 
 
 
@@ -24,13 +23,13 @@ class Home extends Component
         <Navigationbar />
           <Container id='home'>
             <Row>
-              <Col xs={6} md={4}>
-                <img id="main_image" src={image1} alt="hunstville"/>
+              <Col lg>
+                  <img id="profile_picture" src={image1} alt="profile picture" class="img-fluid" />
               </Col>
-              <Col xs={12} md={8}>
+              <Col lg>
                 <Container id="home_about">
                 <Row>
-                  <h1 id="typewriter">Hi! I'm Juliette Rocco<span role="img" aria-label="mermaid">🧜‍♀️</span>
+                  <h1 id="hello_text">Hi! I'm Juliette Rocco<span role="img" aria-label="mermaid">🧜‍♀️</span>
                   <span role="img" aria-label ="woman astronaut">👩‍🚀</span>
                   <span role="img" aria-label="sparkles">✨</span></h1>
                 </Row>
@@ -44,7 +43,7 @@ class Home extends Component
                       artwork, and literature of all kinds.  <br/><br/>
                       I created this website as a way to promote some of the projects and experiences
                       that I've been fortunate enough to be apart of. I am actively looking for new 
-                      opportunities and contacts, please contact me!     
+                      opportunities and acquaintances, please contact me!     
                     </p>
                   </Row>
                   </Container>

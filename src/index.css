@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+/* Entire website */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
@@ -12,85 +11,148 @@ body {
     background-color: #10E7DC;
   }
 
-html{
-  scroll-behavior: smooth;
-}
-
-/*------Titles for every section-----*/
-
 #title {
   color:white;
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
 }
-/* --------------------------------- */
+/* ------------------ */
 
-/*--------Experience Section--------*/
-#experiences {
-  /* background-color: #6CDAEE; */
-  padding : 1.5rem;
-}
-#experience_card {
-    box-shadow: 0 4px 8px 0 #0074E1;
-    transition: 0.3s;
-    margin: 0.5rem;
-    background-color: #59d8ee;
-    font-family: 'Inconsolata', monospace;
+/* home section */
+#home_div{
+  background-color: #10E7DC;
 }
 
-#experience_card:hover{
-    box-shadow: 0 8px 16px 0  #1B9CE5;
-
+#profile_picture{
+  margin-top: 1rem;
 }
 
-#card_title{
+#hello_text{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+  font-family: 'Inconsolata', monospace;
   font-weight: 900;
-  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
   text-shadow: 0.1rem 0.1rem #1B9CE5;
   color: white;
 }
 
-#card_stats{
-  font-weight: 500;
-  font-size: 1.1rem;
+#home_about_text{
+  padding: 2rem;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 0.06rem;
+  background-color: #59d8ee;
+  box-shadow: 0 4px 8px 0 #0074E1;
   color: white;
   text-shadow: 0.1rem 0.1rem #1B9CE5;
-  
+}
+/* ------------------ */
+
+
+/* Nav_bar section */
+#nav_bar{
+  background-color: rgb(141, 147, 238);
 }
 
-#card_info{
+#nav_brand{
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
   color: white;
-  font-size: 1.0rem;
-  text-shadow: 0.1rem 0.1rem #1B8CE5;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-weight: 900;
+  font-size: 1.2rem;
 }
 
-#readButton {
-    margin: 1.5%;
-    cursor: pointer;
-    background-color:#F79E02;
-    color: #fff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-    transition-timing-function: ease-in-out;
-    transition: 0.5s;
-  }
-  
-#readButton:hover {
-  background-color:#f77802;
+#nav_item{
+  margin-right: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-size: 1.2rem;
 }
 
-#readButton:active{
+#nav_item:hover, #nav_brand:hover{
+  color: rgb(195, 199, 250);
+}
+/* ------------------ */
+
+
+/* Project section */
+#project_div{
+  background-color:#F79E02;
+}
+
+#projects{
+  padding-right : 1.5rem;
+  padding-left : 1.5rem;
+  padding-bottom : 3rem;
+  padding-top : 3rem;
+}
+
+#project_card{
+  margin: 0.5rem;
+  font-family: 'Inconsolata', monospace;
+  padding: 2rem;
+}
+
+#center-block_project{
+  margin: auto;
+}
+
+#project_title{
+  font-weight: 900;
+}
+
+#right_block_project{
+  margin: 1rem;
+}
+
+#project_contact_button{
+  cursor: pointer;
+  background-color:#f891b9;
+  color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  border: 0;
+  margin-top: 1rem;
+}
+
+#project_contact_button:hover {
+  background-color:#f34b8b;
+}
+
+#project_contact_button:active{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.1s;
 }
 
-#readButton:focus {
+#project_contact_button:focus {
     outline:0;
 }
+/* ------------------ */
 
-/* --------------------------------- */
+/* Contact section */
+#contact_div{
+  background:pink;
+}
 
+#contact_info{
+  font-family: 'Inconsolata', monospace;
+  padding-top : 3rem;
+}
 
-/*---------Contact Section----------*/
+#contact_buttons{
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 1.5rem;
+}
+
 #contact-icon {
   transition-timing-function: ease-in-out;
   transition: 0.5s;
@@ -105,69 +167,21 @@ html{
     fill:#F79E02;
   }
 
-/* --------------------------------- */
-
-
-#projects{
-  padding : 1.5rem;
+#made_by{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-#project_div{
-  background-color:#F79E02;
-  
-}
-
-#experience_div{
-  background-color: #10E7DC;
-}
-
-#home_div{
-  background-color: #10E7DC;
-}
-
-#contact_div{
-  background:pink;
-}
-
-#contact_info{
-  font-family: 'Inconsolata', monospace;
-}
-
-#nav_bar{
-  background: rgb(192, 196, 255);
-  font-family: 'Inconsolata', monospace;
+#contact_element{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(255, 255, 255);
   font-weight: 900;
 }
 
-
-#home_about_text{
-  padding: 2rem;
-  font-family: 'Inconsolata', monospace;
-  letter-spacing: 0.06rem;
-  background-color: #59d8ee;
-  box-shadow: 0 4px 8px 0 #0074E1;
-  color: white;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-}
-
-#typewriter{
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 2rem;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 900;
-  letter-spacing: 0.01rem;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-  color: white;
-}
-
-
-#contact_buttons{
-  margin: 2rem;
-}
-
-#button{
+#contact_button{
   cursor: pointer;
   background-color:#f891b9;
   color: #fff;
@@ -177,22 +191,91 @@ html{
   border: 0;
 }
 
-#button:hover {
+#contact_button:hover {
   background-color:#f34b8b;
 }
 
-#button:active{
+#contact_button:active{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.1s;
 }
 
-#button:focus {
+#contact_button:focus {
     outline:0;
 }
 
 
-#main_image{
-  width: 100%;
-  height:100%;
-  margin: 1rem;
+/* ------------------ */
+
+
+/* Experience Section */
+#experiences {
+  padding-right : 1.5rem;
+  padding-left : 1.5rem;
+  padding-bottom : 3rem;
+  padding-top : 3rem;
 }
+#experience_card {
+    box-shadow: 0 4px 8px 0 #0074E1;
+    transition: 0.3s;
+    margin: 0.5rem;
+    background-color: #59d8ee;
+    font-family: 'Inconsolata', monospace;
+}
+
+#experience_card:hover{
+    box-shadow: 0 8px 16px 0  #1B9CE5;
+
+}
+
+#experience_card_title{
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-shadow: 0.1rem 0.1rem #1B9CE5;
+  color: white;
+}
+
+#experience_card_stats{
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem #1B9CE5;
+  
+}
+
+#experience_card_info{
+  color: white;
+  font-size: 1.0rem;
+  text-shadow: 0.1rem 0.1rem #1B8CE5;
+}
+
+#experience_readButton {
+    margin: 1.5%;
+    cursor: pointer;
+    background-color:#F79E02;
+    color: #fff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
+  }
+  
+#experience_readButton:hover {
+  background-color:#f77802;
+}
+
+#experience_readButton:active{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.1s;
+}
+
+#experience_readButton:focus {
+    outline:0;
+}
+
+#experience_div{
+  background-color: #10E7DC;
+}
+/* ------------------ */
+
+
+

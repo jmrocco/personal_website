@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-scroll';
 import './index.css';
 
 class Navigationbar extends Component
 {
     render(){
         return(
-            <Navbar id='nav_bar' fluid sticky="top" collapseOnSelect expand='lg'>
-                <Navbar.Brand href="#home_div">Home</Navbar.Brand>
+            <Navbar id='nav_bar' sticky="top" collapseOnSelect expand='lg'>
+                <Navbar.Brand id="nav_brand"><Link to="home_div" smooth="true" >Home</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="#experience_div">Experience</Nav.Link>
-                        <Nav.Link href="#project_div">Projects</Nav.Link>
-                        <Nav.Link href ="#contact_div">Contact</Nav.Link>
+                        <Nav.Item id="nav_item"><Link to="experience_div" smooth="true" >Experience</Link></Nav.Item>
+                        <Nav.Item id="nav_item"><Link to="project_div" smooth="true" >Projects</Link></Nav.Item>
+                        <Nav.Item id="nav_item"><Link to="contact_div" smooth="true" >Contact</Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
