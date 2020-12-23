@@ -20,16 +20,14 @@ class ContactInfo extends Component
                         <Row className="justify-content-md-center">
                             <Col id="contact_text" xs lg="auto">
                                 <p>If you would like to get in contact with me please don't hesistate.</p>
-                                <i>"Feedback is the breakfast of champions" - Ken Blanchard</i>
                             </Col>
                         </Row>
+                        <Row className="justify-content-md-center">
+                            <p id="contact_element"><FaLinkedin id= "contact-icon" />julietterocco</p>
+                            <p id="contact_element"><IoIosMail id="contact-icon" />jmrocco@uwaterloo.ca</p>
+                        </Row>
                         <Row id="contact_buttons" className="justify-content-md-center">
-                            <Col xs lg="auto">
-                                <Button id="project_contact_button" href= "mailto:jmrocco@uwaterloo.ca" target = "_blank">Contact Me</Button>
-                            </Col>
-                            <Col xs lg="auto">
-                                <Button id="project_contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
-                            </Col>
+                                <Button id="contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
                         </Row>
                         <Row className="justify-content-md-center" id ="made_by" xs>
                             <p>Made with&nbsp;<span class="heart">❤️</span>&nbsp;Juliette Rocco 2020</p>
