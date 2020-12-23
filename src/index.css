@@ -9,6 +9,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #10E7DC;
+    background-image: url("./images/blue_background.png");
+    background-repeat: repeat;
   }
 
 #title {
@@ -19,10 +21,6 @@ body {
 /* ------------------ */
 
 /* home section */
-#home_div{
-  background-color: #10E7DC;
-}
-
 #profile_picture{
   margin-top: 1rem;
 }
@@ -54,6 +52,7 @@ body {
 /* Nav_bar section */
 #nav_bar{
   background-color: rgb(141, 147, 238);
+  background-image: linear-gradient( rgb(141, 147, 238), #10E7DC);
 }
 
 #nav_brand{
@@ -63,7 +62,7 @@ body {
   transition-timing-function: ease-in-out;
   transition: 0.5s;
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #nav_item{
@@ -73,11 +72,11 @@ body {
   font-family: 'Inconsolata', monospace;
   transition-timing-function: ease-in-out;
   transition: 0.5s;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #nav_item:hover, #nav_brand:hover{
-  color: rgb(195, 199, 250);
+  color: #F79E02;
 }
 /* ------------------ */
 
@@ -98,10 +97,21 @@ body {
   margin: 0.5rem;
   font-family: 'Inconsolata', monospace;
   padding: 2rem;
+  box-shadow: 0 4px 8px 0 #f34b8b;
+  transition: 0.3s;
+}
+
+#project_card:hover{
+  box-shadow: 0 8px 16px 0  #eb6498;
+}
+
+#project_image{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #center-block_project{
   margin: auto;
+  text-shadow: 0px 1.25px 0px rgba(0, 0, 0, 0.171);
 }
 
 #project_title{
@@ -112,7 +122,7 @@ body {
   margin: 1rem;
 }
 
-#project_contact_button{
+#project_button{
   cursor: pointer;
   background-color:#f891b9;
   color: #fff;
@@ -123,23 +133,26 @@ body {
   margin-top: 1rem;
 }
 
-#project_contact_button:hover {
+#project_button:hover {
   background-color:#f34b8b;
 }
 
-#project_contact_button:active{
+#project_button:active{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.1s;
 }
 
-#project_contact_button:focus {
+#project_button:focus {
     outline:0;
 }
 /* ------------------ */
 
 /* Contact section */
 #contact_div{
-  background:pink;
+  background:#ffc0cb;
+  background-image: url("./images/contact_background.png");
+  background-repeat: no-repeat;
+  color: white;
 }
 
 #contact_info{
@@ -153,7 +166,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-#contact-icon {
+#contact-icon, #contact_bottom {
   transition-timing-function: ease-in-out;
   transition: 0.5s;
   fill: white;
@@ -164,7 +177,7 @@ body {
   margin-top: 2rem;
 }
 #contact-icon:hover {
-    fill:#F79E02;
+    fill: #f34b8b;
   }
 
 #made_by{
@@ -272,10 +285,6 @@ body {
     outline:0;
 }
 
-#experience_div{
-  background-color: #10E7DC;
-}
-/* ------------------ */
 
 
 
