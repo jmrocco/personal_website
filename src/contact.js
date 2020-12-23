@@ -25,13 +25,13 @@ class ContactInfo extends Component
                         </Row>
                         <Row id="contact_buttons" className="justify-content-md-center">
                             <Col xs lg="auto">
-                                <Button id="button">Contact Me</Button>
+                                <Button id="project_contact_button">Contact Me</Button>
                             </Col>
                             <Col xs lg="auto">
-                                <Button id="button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
+                                <Button id="project_contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
                             </Col>
                         </Row>
-                        <Row className="justify-content-md-center" id ="watermark" xs>
+                        <Row className="justify-content-md-center" id ="made_by" xs>
                             <p>Made with&nbsp;<span class="heart">❤️</span>&nbsp;Juliette Rocco 2020</p>
                         </Row>
                     </div>

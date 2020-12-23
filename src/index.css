@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+/* Entire website */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
@@ -12,18 +11,169 @@ body {
     background-color: #10E7DC;
   }
 
-/*------Titles for every section-----*/
-
 #title {
   color:white;
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
 }
-/* --------------------------------- */
+/* ------------------ */
 
-/*--------Experience Section--------*/
+/* home section */
+#home_div{
+  background-color: #10E7DC;
+}
+
+#profile_picture{
+  margin-top: 1rem;
+}
+
+#hello_text{
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
+  letter-spacing: 0.01rem;
+  text-shadow: 0.1rem 0.1rem #1B9CE5;
+  color: white;
+}
+
+#home_about_text{
+  padding: 2rem;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 0.06rem;
+  background-color: #59d8ee;
+  box-shadow: 0 4px 8px 0 #0074E1;
+  color: white;
+  text-shadow: 0.1rem 0.1rem #1B9CE5;
+}
+/* ------------------ */
+
+
+/* Nav_bar section */
+#nav_bar{
+  background-color: rgb(141, 147, 238);
+}
+
+#nav_brand{
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+#nav_item{
+  margin-right: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+#nav_item:hover, #nav_brand:hover{
+  color: rgb(195, 199, 250);
+}
+/* ------------------ */
+
+
+/* Project section */
+#project_div{
+  background-color:#F79E02;
+}
+
+#projects{
+  padding-right : 1.5rem;
+  padding-left : 1.5rem;
+  padding-bottom : 3rem;
+  padding-top : 3rem;
+}
+
+#project_card{
+  margin: 0.5rem;
+  font-family: 'Inconsolata', monospace;
+  padding: 2rem;
+}
+
+.center-block_project{
+  margin-top: 10rem;
+}
+
+#project_title{
+  font-weight: 900;
+}
+
+#right_block_project{
+  margin: 1rem;
+}
+
+#project_contact_button{
+  cursor: pointer;
+  background-color:#f891b9;
+  color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  border: 0;
+  margin-top: 1rem;
+}
+
+#project_contact_button:hover {
+  background-color:#f34b8b;
+}
+
+#project_contact_button:active{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.1s;
+}
+
+#project_contact_button:focus {
+    outline:0;
+}
+/* ------------------ */
+
+/* Contact section */
+#contact_div{
+  background:pink;
+}
+
+#contact_info{
+  font-family: 'Inconsolata', monospace;
+  padding-top : 3rem;
+}
+
+#contact_buttons{
+  margin: 2rem;
+}
+
+#contact-icon {
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+  fill: white;
+  width: 2.5rem;
+  height : 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#contact-icon:hover {
+    fill:#F79E02;
+  }
+
+#made_by{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+/* ------------------ */
+
+
+/* Experience Section */
 #experiences {
-  /* background-color: #6CDAEE; */
   padding-right : 1.5rem;
   padding-left : 1.5rem;
   padding-bottom : 3rem;
@@ -42,14 +192,14 @@ body {
 
 }
 
-#card_title{
+#experience_card_title{
   font-weight: 900;
   font-size: 1.3rem;
   text-shadow: 0.1rem 0.1rem #1B9CE5;
   color: white;
 }
 
-#card_stats{
+#experience_card_stats{
   font-weight: 500;
   font-size: 1.1rem;
   color: white;
@@ -57,13 +207,13 @@ body {
   
 }
 
-#card_info{
+#experience_card_info{
   color: white;
   font-size: 1.0rem;
   text-shadow: 0.1rem 0.1rem #1B8CE5;
 }
 
-#readButton {
+#experience_readButton {
     margin: 1.5%;
     cursor: pointer;
     background-color:#F79E02;
@@ -73,172 +223,23 @@ body {
     transition: 0.5s;
   }
   
-#readButton:hover {
+#experience_readButton:hover {
   background-color:#f77802;
 }
 
-#readButton:active{
+#experience_readButton:active{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     transition: 0.1s;
 }
 
-#readButton:focus {
+#experience_readButton:focus {
     outline:0;
-}
-
-/* --------------------------------- */
-
-
-/*---------Contact Section----------*/
-#contact-icon {
-  transition-timing-function: ease-in-out;
-  transition: 0.5s;
-  fill: white;
-  width: 2.5rem;
-  height : 2.5rem;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-#contact-icon:hover {
-    fill:#F79E02;
-  }
-
-/* --------------------------------- */
-
-
-#projects{
-  padding-right : 1.5rem;
-  padding-left : 1.5rem;
-  padding-bottom : 3rem;
-  padding-top : 3rem;
-}
-
-
-#project_div{
-  background-color:#F79E02;
 }
 
 #experience_div{
   background-color: #10E7DC;
 }
-
-#home_div{
-  background-color: #10E7DC;
-}
-
-#contact_div{
-  background:pink;
-}
-
-#contact_info{
-  font-family: 'Inconsolata', monospace;
-  padding-top : 3rem;
-}
-
-#watermark{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-#nav_bar{
-  background-color: rgb(141, 147, 238);
-}
-
-#nav_brand{
-  cursor: pointer;
-  font-family: 'Inconsolata', monospace;
-  color: white;
-  transition-timing-function: ease-in-out;
-  transition: 0.5s;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-#nav_item{
-  margin-right: 1rem;
-  color: white;
-  cursor: pointer;
-  font-family: 'Inconsolata', monospace;
-  transition-timing-function: ease-in-out;
-  transition: 0.5s;
-  font-size: 1.2rem;
-}
-
-#nav_item:hover, #nav_brand:hover{
-  color: rgb(162, 247, 247);
-}
+/* ------------------ */
 
 
-#home_about_text{
-  padding: 2rem;
-  font-family: 'Inconsolata', monospace;
-  letter-spacing: 0.06rem;
-  background-color: #59d8ee;
-  box-shadow: 0 4px 8px 0 #0074E1;
-  color: white;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-}
 
-#typewriter{
-  padding-top: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 2rem;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 900;
-  letter-spacing: 0.01rem;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-  color: white;
-}
-
-
-#contact_buttons{
-  margin: 2rem;
-}
-
-#button{
-  cursor: pointer;
-  background-color:#f891b9;
-  color: #fff;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  transition-timing-function: ease-in-out;
-  transition: 0.5s;
-  border: 0;
-  margin-top: 1rem;
-}
-
-#button:hover {
-  background-color:#f34b8b;
-}
-
-#button:active{
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: 0.1s;
-}
-
-#button:focus {
-    outline:0;
-}
-
-
-#main_image{
-  margin-top: 1rem;
-}
-
-#project_card{
-  margin: 0.5rem;
-  font-family: 'Inconsolata', monospace;
-  padding: 2rem;
-}
-
-#project_title{
-  font-weight: 900;
-}
-
-#right_block_project{
-  margin: 1rem;
-}
-
-.center-block{
-  margin-top: 10rem;
-}

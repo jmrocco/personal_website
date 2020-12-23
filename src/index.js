@@ -24,12 +24,12 @@ class Home extends Component
           <Container id='home'>
             <Row>
               <Col lg>
-                  <img id="main_image" src={image1} alt="hunstville" class="img-fluid" />
+                  <img id="profile_picture" src={image1} alt="profile picture" class="img-fluid" />
               </Col>
               <Col lg>
                 <Container id="home_about">
                 <Row>
-                  <h1 id="typewriter">Hi! I'm Juliette Rocco<span role="img" aria-label="mermaid">🧜‍♀️</span>
+                  <h1 id="hello_text">Hi! I'm Juliette Rocco<span role="img" aria-label="mermaid">🧜‍♀️</span>
                   <span role="img" aria-label ="woman astronaut">👩‍🚀</span>
                   <span role="img" aria-label="sparkles">✨</span></h1>
                 </Row>

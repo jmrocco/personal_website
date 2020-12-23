@@ -24,7 +24,7 @@ class Projects extends Component
                                         <Card.Body>
                                             <Container id = "project_content">
                                                 <Row className="justify-content-md-center">
-                                                    <Col class="center-block">
+                                                    <Col class="center-block_project">
                                                         <Card.Title id="project_title">{project.title}
                                                         <span role="img" aria-label ={project.emoji_label}>
                                                         {project.emoji}‍
@@ -35,7 +35,7 @@ class Projects extends Component
                                                     </Col> 
                                                     <Col id="right_block_project" xs={11} md={5}>
                                                         <Card.Img id="project_image" src={project.image} alt= {project.alt}/>
-                                                        <Button id="button" href={project.link} target="_blank" >Github</Button>
+                                                        <Button id="project_contact_button" href={project.link} target="_blank" >Github</Button>
                                                     </Col> 
                                                 </Row>          
                                             </Container>
@@ -58,9 +58,9 @@ const projects = [
         description: "Mood-based recommendation web application.",
         why: "During the COVID lockdown in April 2020, I built myself a web application " +
              "using JavaScript (express.js) that could recommend me books, movies, and music " +
-             "that reflected how I was feeling.",
+             "that reflected how I was feeling. The application uses various databases and indexing.",
         image: im_feeling,
-        alt: "placeholder",
+        alt: "im feeling application",
         emoji_label: "performing arts",
         emoji: '🎭',
         link: "https://github.com/jmrocco/im_feeling"
@@ -75,7 +75,7 @@ const projects = [
              "The entire mirror was built from scratch. Using a Raspberry Pi along with Python " +
              "and JavaScript libraries, this mirror can tell you the weather while you brush your teeth.",
         image : smart_mirror,
-        alt: "placeholder",
+        alt: "Juliette posing in the smart mirror",
         emoji_label: "selfie",
         emoji: '🤳',
         link: "https://github.com/jmrocco/smart-mirror"
@@ -86,11 +86,10 @@ const projects = [
         skills: "Skills: Web Development",
         description: "Personal website to display skills and accomplishments.",
         why: "In the summer of 2019 I wrote my first personal website; Although attractive on desktop " +
-             "it was not a responsive application. I created this website as an update to my old " +
-             "one. Since version 1.0, I've learned new skills and techniques in web development that I've " +
-             "applied in this website. Picture shown is of version 1.0.",
+             "it was not a responsive application. I created this website as an update to version 1.0 which "+
+             "showcases the new skills and techniques In web development that I've learned.",
         image: website,
-        alt: "placeholder",
+        alt: "Version 1.0 website",
         emoji_label: "laptop",
         emoji: '💻',
         link: "https://github.com/jmrocco/my-website"

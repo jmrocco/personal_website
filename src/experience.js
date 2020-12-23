@@ -26,9 +26,9 @@ class Experience extends Component
                                     <Card id= 'experience_card'>
                                         <Card.Body>
                                             <Card.Img variant="top" src={experience.image} alt= {experience.alt}/>
-                                            <Card.Title id="card_title">{experience.title}</Card.Title>
+                                            <Card.Title id="experience_card_title">{experience.title}</Card.Title>
                                             <Card.Text>
-                                                <Container id="card_stats">
+                                                <Container id="experience_card_stats">
                                                     <Row>
                                                         {experience.company}
                                                     </Row>
@@ -38,11 +38,11 @@ class Experience extends Component
                                                 </Container>
                                             </Card.Text>
                                             <Accordion>
-                                                <Accordion.Toggle as={Button} variant="button" eventKey = "0" id='readButton'>
+                                                <Accordion.Toggle as={Button} variant="button" eventKey = "0" id='experience_readButton'>
                                                     Read more
                                                 </Accordion.Toggle>
                                                 <Accordion.Collapse eventKey = "0">
-                                                    <Card.Text id="card_info">
+                                                    <Card.Text id="experience_card_info">
                                                         {experience.skills}<br/><br/>
                                                         {experience.description}
                                                     </Card.Text>
