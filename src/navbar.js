@@ -13,8 +13,8 @@ class Navigationbar extends Component
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Item id="nav_item"><Link to="experience_div" smooth="true" >Experience</Link></Nav.Item>
                         <Nav.Item id="nav_item"><Link to="project_div" smooth="true" >Projects</Link></Nav.Item>
+                        <Nav.Item id="nav_item"><Link to="experience_div" smooth="true" >Experience</Link></Nav.Item>
                         <Nav.Item id="nav_item"><Link to="contact_div" smooth="true" >Contact</Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
