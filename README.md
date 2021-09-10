@@ -10,3 +10,5 @@ Technologies used:
 - CSS
 - Bootstrap
 
+![image](https://user-images.githubusercontent.com/46534357/132784953-26b4feca-628a-4412-96ee-b8755fc14d51.png)
+
