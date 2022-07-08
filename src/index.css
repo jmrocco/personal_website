@@ -8,8 +8,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #10E7DC;
-    background-image: url("./images/blue_background.png");
+    background-image: linear-gradient(#10E7DC,rgb(141, 147, 238));
     background-repeat: repeat;
   }
 
@@ -33,7 +32,6 @@ body {
   font-family: 'Inconsolata', monospace;
   font-weight: 900;
   letter-spacing: 0.01rem;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
   color: white;
 }
 
@@ -41,10 +39,9 @@ body {
   padding: 2rem;
   font-family: 'Inconsolata', monospace;
   letter-spacing: 0.06rem;
-  background-color: #59d8ee;
+  background-color: rgba(141, 147, 238, 0.695);
   box-shadow: 0 4px 8px 0 #0074E1;
   color: white;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
 }
 /* ------------------ */
 
@@ -52,7 +49,7 @@ body {
 /* Nav_bar section */
 #nav_bar{
   background-color: rgb(141, 147, 238);
-  background-image: linear-gradient( rgb(141, 147, 238), #10E7DC);
+  background-image: linear-gradient( rgb(141, 147, 238), #10e7dc);
 }
 
 #nav_brand{
@@ -82,9 +79,6 @@ body {
 
 
 /* Project section */
-#project_div{
-  background-color:#F79E02;
-}
 
 #projects{
   padding-right : 1.5rem;
@@ -97,12 +91,12 @@ body {
   margin: 0.5rem;
   font-family: 'Inconsolata', monospace;
   padding: 2rem;
-  box-shadow: 0 4px 8px 0 #f34b8b;
+  box-shadow: 0 4px 8px 0 #0074E1;
   transition: 0.3s;
 }
 
 #project_card:hover{
-  box-shadow: 0 8px 16px 0  #eb6498;
+  box-shadow: 0 8px 16px 0  #0357a6;
 }
 
 #project_image{
@@ -111,7 +105,6 @@ body {
 
 #center-block_project{
   margin: auto;
-  text-shadow: 0px 1.25px 0px rgba(0, 0, 0, 0.171);
 }
 
 #project_title{
@@ -124,7 +117,7 @@ body {
 
 #project_button{
   cursor: pointer;
-  background-color:#f891b9;
+  background-color:#F79E02;
   color: #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   transition-timing-function: ease-in-out;
@@ -134,7 +127,7 @@ body {
 }
 
 #project_button:hover {
-  background-color:#f34b8b;
+  background-color:#f77402;
 }
 
 #project_button:active{
@@ -149,8 +142,6 @@ body {
 
 /* Contact section */
 #contact_div{
-  background:#ffc0cb;
-  background-image: url("./images/contact_background.png");
   background-repeat: no-repeat;
   color: white;
 }
@@ -177,8 +168,8 @@ body {
   margin-top: 2rem;
 }
 #contact-icon:hover {
-    fill: #f34b8b;
-  }
+    fill: #F79E02;
+}
 
 #made_by{
   padding-left: 3rem;
@@ -196,7 +187,7 @@ body {
 
 #contact_button{
   cursor: pointer;
-  background-color:#f891b9;
+  background-color:#F79E02;
   color: #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   transition-timing-function: ease-in-out;
@@ -205,7 +196,7 @@ body {
 }
 
 #contact_button:hover {
-  background-color:#f34b8b;
+  background-color:#f77402;
 }
 
 #contact_button:active{
@@ -232,34 +223,30 @@ body {
     box-shadow: 0 4px 8px 0 #0074E1;
     transition: 0.3s;
     margin: 0.5rem;
-    background-color: #59d8ee;
+    background-color: rgb(255, 255, 255);
     font-family: 'Inconsolata', monospace;
 }
 
 #experience_card:hover{
-    box-shadow: 0 8px 16px 0  #1B9CE5;
+    box-shadow: 0 8px 16px 0  #0357a6;
 
 }
 
 #experience_card_title{
   font-weight: 900;
   font-size: 1.3rem;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #experience_card_stats{
   font-weight: 500;
   font-size: 1.1rem;
-  color: white;
-  text-shadow: 0.1rem 0.1rem #1B9CE5;
-  
+  color: rgb(0, 0, 0);
 }
 
 #experience_card_info{
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.0rem;
-  text-shadow: 0.1rem 0.1rem #1B8CE5;
 }
 
 #experience_readButton {
@@ -273,7 +260,7 @@ body {
   }
   
 #experience_readButton:hover {
-  background-color:#f77802;
+  background-color:#f77402;
 }
 
 #experience_readButton:active{
