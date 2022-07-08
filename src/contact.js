@@ -30,7 +30,7 @@ class ContactInfo extends Component
                                 <Button id="contact_button" href={resume} download="juliette_rocco_resume.pdf" target="_blank">Resume</Button>
                         </Row>
                         <Row className="justify-content-md-center" id ="made_by" xs>
-                            <p>Made with&nbsp;<span class="heart">❤️</span>&nbsp;Juliette Rocco 2020</p>
+                            <p>Made with&nbsp;<span class="heart">❤️</span>&nbsp;Juliette Rocco 2022</p>
                         </Row>
                     </div>
                 </Container>

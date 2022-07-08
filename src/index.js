@@ -34,7 +34,7 @@ class Home extends Component
                   <span role="img" aria-label="sparkles">✨</span></h1>
                 </Row>
                   <Row id='home_about_text'>
-                    <p>I am a 2nd year Computer Engineering student at The University of 
+                    <p>I'm a 3rd year Computer Engineering student at The University of 
                       Waterloo who is looking to create and be a part of tomorrows future. I am a
                       passionate and energetic person with a love for learning new things and 
                       meeting new people.<br/><br/>

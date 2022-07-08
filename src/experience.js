@@ -54,6 +54,41 @@ class Experience extends Component
                         );
                     })}
                     </Row>
+                    <Row>
+                    {work_experience2.map(experience =>{
+                        return (
+                                <Col lg>
+                                    <Card id= 'experience_card'>
+                                        <Card.Body>
+                                            <Card.Img variant="top" src={experience.image} alt= {experience.alt}/>
+                                            <Card.Title id="experience_card_title">{experience.title}</Card.Title>
+                                            <Card.Text>
+                                                <Container id="experience_card_stats">
+                                                    <Row>
+                                                        {experience.company}
+                                                    </Row>
+                                                    <Row>
+                                                        {experience.date}
+                                                    </Row>
+                                                </Container>
+                                            </Card.Text>
+                                            <Accordion>
+                                                <Accordion.Toggle as={Button} variant="button" eventKey = "0" id='experience_readButton'>
+                                                    Read more
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey = "0">
+                                                    <Card.Text id="experience_card_info">
+                                                        {experience.skills}<br/><br/>
+                                                        {experience.description}
+                                                    </Card.Text>
+                                                </Accordion.Collapse>
+                                            </Accordion>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                        );
+                    })}
+                    </Row>
                 </Container>
             </div>
         );
@@ -63,7 +98,7 @@ class Experience extends Component
 const work_experience = [
     {
         key: 1,
-        title: "Software Engineering Intern",
+        title: "Fullstack Developer",
         image: consensys,
         alt: "Consensys logo",
         show: "false",
@@ -100,6 +135,32 @@ const work_experience = [
         description: "As an electrical and computer engineering teaching assistant, I helped " +
                      "run the first year introduction to programming class in an online environment. " +
                     "Responsibilites also included designing, testing and implementing changes to a production codebase."
+    }
+]
+
+const work_experience2 = [
+    {
+        key: 1,
+        title: "Software Engineer",
+        image: "",
+        alt: "",
+        show: "false",
+        company: "Motive",
+        date: "May 2021 to Augest 2021",
+        skills: "Skills: Backend Development",
+        description: "tbd"
+                     
+    },
+    {
+        key: 2,
+        title: "Blockchain Engineer",
+        image: "",
+        alt: "",
+        show: "false",
+        company: "Hypeshot",
+        date: "January 2022 to April 2022",
+        skills: "Skills: Blockchain and Fullstack Development",
+        description: "tbd"
     }
 ]
 
