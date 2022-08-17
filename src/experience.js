@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import avidbots from './images/avidbots.png';
 import weef_ta from './images/weef_ta.png';
-import motive from './images/output-onlinepngtools-2.png';
+import motive from './images/motive.png';
 import consensys from './images/consensys.png';
 import hypeshot from './images/hypeshot.jpeg';
 
