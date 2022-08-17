@@ -6,7 +6,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import avidbots from './images/avidbots.png';
 import weef_ta from './images/weef_ta.png';
+import motive from './images/output-onlinepngtools-2.png';
 import consensys from './images/consensys.png';
+import hypeshot from './images/hypeshot.jpeg';
 
 import './index.css';
 import { Accordion } from 'react-bootstrap';
@@ -107,7 +109,7 @@ const work_experience = [
         skills: "Skills: APIs & Fullstack Development",
         description: "Designed a media conversion API to be used with the Kauri Blockchain platform. " +
                      "Wrote extensive technical documentation for the beginner Blockchain user as well as " +
-                     "optimized smart contract code base usuage by 90%."
+                     "optimized smart contract code usage by 90% through analyzing self created code coverage module."
                      
     },
     {
@@ -134,7 +136,7 @@ const work_experience = [
         skills: "Skills: Python Scripting & UNIX Administration",
         description: "As an electrical and computer engineering teaching assistant, I helped " +
                      "run the first year introduction to programming class in an online environment. " +
-                    "Responsibilites also included designing, testing and implementing changes to a production codebase."
+                    "Responsibilities also included designing, testing and implementing changes to a production codebase."
     }
 ]
 
@@ -142,25 +144,30 @@ const work_experience2 = [
     {
         key: 1,
         title: "Software Engineer",
-        image: "",
+        image: motive,
         alt: "",
         show: "false",
         company: "Motive",
-        date: "May 2021 to Augest 2021",
+        date: "May 2021 to August 2021",
         skills: "Skills: Backend Development",
-        description: "tbd"
-                     
+        description: "At Motive (formerly known as KeepTruckin) my job as a backend " +
+                     "engineer was to create administration tools for the compliance " +
+                     "platform, implement new API endpoints and update as well as fix " + 
+                     "existing code. This job helped me to develop skills in cloud computing "+
+                    "services such as AWS and further refine my expertise in backend server development."
     },
     {
         key: 2,
         title: "Blockchain Engineer",
-        image: "",
+        image: hypeshot,
         alt: "",
         show: "false",
         company: "Hypeshot",
         date: "January 2022 to April 2022",
         skills: "Skills: Blockchain and Fullstack Development",
-        description: "tbd"
+        description: "Developed a conference call extension using Twilio APIs. " +
+                     "Researched and implemented an NFT encryption and decryption service which stored encrypted media in an IPFS and AWS bucket. " +
+                     "Created mobile and desktop versions of an NFT music player to take decrypted data from a user's token and convert it into an MP3 playable song."
     }
 ]
 
