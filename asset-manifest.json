@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b39d204.css",
+    "main.js": "/static/js/main.e7fd8820.js",
+    "static/media/image2.png": "/static/media/image2.67d59adbbcbb0f876794.png",
+    "static/media/juliette_rocco_resume.pdf": "/static/media/juliette_rocco_resume.73391d043f2ab73f81ef.pdf",
+    "static/media/im_feeling.png": "/static/media/im_feeling.0101504bef4b3f8a0695.png",
+    "static/media/website.png": "/static/media/website.9539921f3da506d4fb94.png",
+    "static/media/smart_mirror.jpg": "/static/media/smart_mirror.bf67657670d780de2625.jpg",
+    "static/media/consensys.png": "/static/media/consensys.97c34e972f0a501e9f30.png",
+    "static/media/motive.png": "/static/media/motive.03f0318bba63676844fb.png",
+    "static/media/avidbots.png": "/static/media/avidbots.ed3ccaa5f85ccafda969.png",
+    "static/media/weef_ta.png": "/static/media/weef_ta.6c245a1ee1a5a80e6a1b.png",
+    "static/media/hypeshot.jpeg": "/static/media/hypeshot.c3009bcb48eb804ab878.jpeg",
+    "index.html": "/index.html",
+    "main.2b39d204.css.map": "/static/css/main.2b39d204.css.map",
+    "main.e7fd8820.js.map": "/static/js/main.e7fd8820.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b39d204.css",
+    "static/js/main.e7fd8820.js"
+  ]
+}
